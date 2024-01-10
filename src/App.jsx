@@ -5,7 +5,6 @@ import TopBar from "./components/TopBar";
 import ActionBar from "./components/ActionBar";
 import Footer from "./components/Footer";
 import Gallery from "./components/Gallery";
-import TVShows from "./components/TVShows";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -16,10 +15,9 @@ function App() {
 					<TopBar />
 					<ActionBar />
 					<Routes>
-						{/*<Gallery title="batman" />
-						<Gallery title="lord%20of%20the%20rings" />
-						<Gallery title="star%20wars" />*/}
-						<Route path="/tv-shows" element={<TVShows />} />
+						<Route element={<Gallery title="batman" />} />
+						<Route element={<Gallery title="lord%20of%20the%20rings" />} />
+						<Route element={<Gallery title="star%20wars" />} />
 					</Routes>
 				</Container>
 				<Footer />
