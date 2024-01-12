@@ -15,9 +15,9 @@ function App() {
 					<TopBar />
 					<ActionBar />
 					<Routes>
-						<Route path="/" element={<Gallery title="batman" bigTitle="Trending Now" />} />
-						<Route path="/" element={<Gallery title="lord%20of%20the%20rings" bigTitle="Watch Again" />} />
-						<Route path="/" element={<Gallery title="star%20wars" bigTitle="New Releases" />} />
+						<Route path="/" element={<Gallery title="batman" category="Trending Now" />} />
+						<Route path="/" element={<Gallery title="lord%20of%20the%20rings" category="Watch Again" />} />
+						<Route path="/" element={<Gallery title="star%20wars" category="New Releases" />} />
 						{/*<Route path="" element={<TVShows />} />*/}
 					</Routes>
 				</Container>
